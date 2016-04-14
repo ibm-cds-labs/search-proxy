@@ -1,0 +1,17 @@
+{
+  "name": "search-proxy",
+  "version": "0.0.1",
+  "description": "A Simple HTTP proxy that redirects /search to a Cloudant service",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "request": "^2.71.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibm-cds-labs/search-proxy"
+  }
+}
