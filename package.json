@@ -7,8 +7,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "cfenv": "^1.0.3",
-    "request": "^2.71.0"
+    "cfenv": "^1.0.4",
+    "request": "^2.81.0"
   },
   "repository": {
     "type": "git",
