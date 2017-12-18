@@ -1,6 +1,6 @@
 # search-proxy
 
-A Bluemix app that when run, proxies any traffic arriving at `/search` to a Cloudant database.
+A Bluemix app that when run, proxies any traffic arriving at `/search` to a Cloudant search view.
 
 e.g.
 
@@ -12,4 +12,20 @@ or
 
 ```
 https://search-service.mybluemix.net/search?q=pouchdb
+```
+
+It assumes that a database `devcenter` exists so appends `/devcenter/_design/search/_search` to the `CLOUDAN_HOST` you supply.
+
+## Deployment
+
+Create a an environment variable containing the Cloudant host e.g.
+
+```
+export CLOUDANT_HOST="https://myhost.cloudant.com"
+```
+
+and deploy with 
+
+```
+bx cf push devcenter-proxy
 ```
